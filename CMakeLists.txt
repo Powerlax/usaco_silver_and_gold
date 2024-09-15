@@ -121,4 +121,8 @@ add_executable(untitled main.cpp
         cowpatibility.cpp
         help_yourself.cpp
         cow_camp.cpp
+        frog_1.cpp
+        mortal_kombat_tower.cpp
+        hoof_paper_scissors.cpp
+        time_is_mooney.cpp
 )
