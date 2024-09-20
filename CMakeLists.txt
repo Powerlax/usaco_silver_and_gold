@@ -125,4 +125,9 @@ add_executable(untitled main.cpp
         mortal_kombat_tower.cpp
         hoof_paper_scissors.cpp
         time_is_mooney.cpp
+        snakes.cpp
+        circular_barn_revisited.cpp
+        taming_the_herd.cpp
+        moortal_cowmbat.cpp
+        dice_combinations.cpp
 )
