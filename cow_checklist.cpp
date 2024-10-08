@@ -29,7 +29,7 @@ int main() {
     vector min_dist(h + 1, vector(g + 1, vector(2, max_distance_traversable)));
     min_dist[1][0][0] = 0;
     for (int i = 0; i <= h; i++) {
-        for (int j = 0; j <= g; j++) {
+        for (int j = 0; j <= g; j+) {
             if (i > 1) {
                 min_dist[i][j][0] = min(min_dist[i][j][0], min_dist[i - 1][j][0] + dist(hs[i - 2], hs[i - 1]));
             }
@@ -42,6 +42,5 @@ int main() {
             }
         }
     }
-
     cout << min_dist[h][g][0] << endl;
 }
