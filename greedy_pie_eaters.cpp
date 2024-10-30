@@ -10,6 +10,8 @@ bool check_max(int &a, const int &b) {
 }
 
 int main() {
+    freopen("pieaters.in", "r", stdin);
+    freopen("pieaters.out", "w", stdout);
     int n, m;
     cin >> n >> m;
     vector mx(n, vector(n, vector<int>(n)));
