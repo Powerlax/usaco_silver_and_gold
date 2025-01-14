@@ -36,26 +36,16 @@ int main() {
             permutation[i]--;
         }
         int ans = 0;
-        while (true) {
             visited.assign(n, false);
-            bool changed = false;
             for (int i = 0; i < n; i++) {
                 if (!visited[i]) {
                     cycle.clear();
                     find_cycle(i);
-                }
-                if (cycle.size() > 2) {
-                    const int pointer1 = permutation[cycle[cycle.size() - 1]];
-                    const int pointer2 = cycle[cycle.size() - 2];
-                    swap(permutation[pointer1], permutation[pointer2]);
-                    changed = true;
-                    ans++;
+                    if (cycle.size() > 2) {
+                        ans += (cycle.size() - 1) / 2;
+                    }
                 }
             }
-            if (!changed) {
-                break;
-            }
-        }
         cout << ans << endl;
     }
     return 0;
