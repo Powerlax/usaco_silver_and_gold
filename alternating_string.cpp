@@ -19,7 +19,7 @@ int cost(const string &s) {
         }
     }
     int top_even = -1, top_odd = -1;
-    for (auto &[fst, snd] : even) {
+    for (auto &[first, snd] : even) {
         top_even = max(top_even, snd);
     }
     for (auto &[fst, snd] : odd) {
